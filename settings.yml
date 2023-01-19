@@ -58,7 +58,7 @@ variables:
   # Template-Spec settings #
   # ---------------------- #
 
-  templateSpecsDoPublish: true # Set to true, if you would like to publish module templates as template specs
+  templateSpecsDoPublish: false # Set to true, if you would like to publish module templates as template specs
   templateSpecsRGName: 'artifacts-rg' # The name of the resource group to publish to. If the resource group does not exist, it will be created.
   templateSpecsRGLocation: 'North Europe' # The location of the resource group to publish to
   templateSpecsDescription: components # The description to add to template specs published by this platform
@@ -68,7 +68,7 @@ variables:
   # ------------------------------- #
 
   bicepRegistryDoPublish: true # Set to true, if you would like to publish module templates to a bicep registry
-  bicepRegistryName: adpsxxazacrx001 # The name of the bicep registry (ACR) to publish to. If it does not exist, it will be created.
+  bicepRegistryName: conacrneu001 # The name of the bicep registry (ACR) to publish to. If it does not exist, it will be created.
   bicepRegistryRGName: 'artifacts-rg' # The resource group that hosts the private bicep registry (ACR)
   bicepRegistryRgLocation: 'North Europe' # The location of the resource group to publish to
 
@@ -98,7 +98,7 @@ variables:
   # Universal packages settings #
   # --------------------------- #
 
-  artifactsFeedDoPublish: true # Set to true, if you would like to publish modules as Universal Packages (in Azure DevOps Artifacts)
+  artifactsFeedDoPublish: false # Set to true, if you would like to publish modules as Universal Packages (in Azure DevOps Artifacts)
   vstsFeedName: 'carml' # The name of the Azure DevOps universal packages feed to publish to
   vstsFeedProject: '$(System.TeamProject)' # The project that hosts the feed
   vstsFeedToken: $(System.AccessToken) # The token used to publish universal packages into the feed above
