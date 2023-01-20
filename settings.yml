@@ -58,7 +58,7 @@ variables:
   # Template-Spec settings #
   # ---------------------- #
 
-  templateSpecsDoPublish: false # Set to true, if you would like to publish module templates as template specs
+  templateSpecsDoPublish: true # Set to true, if you would like to publish module templates as template specs
   templateSpecsRGName: 'artifacts-rg' # The name of the resource group to publish to. If the resource group does not exist, it will be created.
   templateSpecsRGLocation: 'North Europe' # The location of the resource group to publish to
   templateSpecsDescription: components # The description to add to template specs published by this platform
